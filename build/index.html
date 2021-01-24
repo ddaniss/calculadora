@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CALCULADORA</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="calculadora">
+      <div id="display">
+        <div id="displayOperacion"></div>
+        <div id="displayResultado">0</div>
+      </div>
+      <div id="btnContainer">
+        <button class="btn utility" onclick="clear()" data-AC>AC</button>
+        <button class="btn utility" data-signo>+/-</button>
+        <button class="btn utility" data-porcentaje>%</button>
+        <button class="btn utility" onclick="checkOp('div')" data-div>/</button>
+        <button class="btn" data-num-btn>1</button>
+        <button class="btn" data-num-btn>2</button>
+        <button class="btn" data-num-btn>3</button>
+        <!-- prettier-ignore -->
+        <button class="btn utility" onclick="checkOp('mult')" data-mult>*</button>
+        <button class="btn" data-num-btn>4</button>
+        <button class="btn" data-num-btn>5</button>
+        <button class="btn" data-num-btn>6</button>
+        <!-- prettier-ignore -->
+        <button class="btn utility" onclick="checkOp('resta')" data-resta>-</button>
+        <button class="btn" data-num-btn>7</button>
+        <button class="btn" data-num-btn>8</button>
+        <button class="btn" data-num-btn>9</button>
+        <!-- prettier-ignore -->
+        <button class="btn utility" onclick="checkOp('suma')" data-suma>+</button>
+        <button class="btn utility" data-punto>.</button>
+        <button class="btn" data-num-btn>0</button>
+        <button class="btn utility" data-borrar>
+          <img src="backspace.png" alt="" />
+        </button>
+        <button class="btn igual" onclick="igualar()" data-igual>=</button>
+      </div>
+    </div>
+  </body>
+</html>

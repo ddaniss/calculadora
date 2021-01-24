@@ -1,0 +1,83 @@
+.btn {
+  border: none;
+  height: 80px;
+  width: 80px;
+  font-size: 54px;
+  display: grid;
+  place-items: center;
+  background-color: $utilityColor;
+  border-radius: 5px;
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    background-color: $accentColor;
+    color: $utilityColor;
+  }
+  &:active {
+    background-color: lighten($accentColor, 5);
+    color: $utilityColor;
+  }
+  img {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+.igual {
+  background-color: $accentColor;
+  color: $utilityColor;
+  &:hover {
+    background-color: $utilityColor;
+    color: $accentColor;
+  }
+  &:active {
+    background-color: darken($utilityColor, 10);
+    color: $accentColor;
+  }
+}
+
+.utility {
+  background-color: lighten($secondaryColor, 10);
+  font-size: 44px;
+  color: $utilityColor;
+  &:hover {
+    background-color: $secondaryColor;
+  }
+  &:active {
+    background-color: lighten($secondaryColor, 5);
+  }
+}
+
+#displayResultado,
+#displayOperacion {
+  height: 70px;
+  width: 100%;
+  background-color: lighten($secondaryColor, 10);
+  color: $utilityColor;
+  text-shadow: $accentColor 3px 1px;
+  text-align: right;
+  letter-spacing: 2px;
+  font-size: 55px;
+  font-weight: 800;
+  padding: 0.1rem;
+  padding-right: 1rem;
+  overflow: hidden;
+}
+
+#displayOperacion {
+  font-size: 40px;
+}
+
+#displayResultado {
+  padding-bottom: 0rem;
+  height: 72px;
+}
+
+@media only screen and (max-width: 750px) {
+  .btn {
+    height: 80px;
+    width: 75px;
+    font-size: 54px;
+  }
+}

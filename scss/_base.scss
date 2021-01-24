@@ -1,0 +1,14 @@
+$primaryColor: #863131;
+$secondaryColor: #0b090a;
+$accentColor: #a4a216;
+$utilityColor: #d6d6d6;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Abel", sans-serif;
+  color: $accentColor;
+}

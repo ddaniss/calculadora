@@ -1,0 +1,45 @@
+body {
+  padding: 4rem;
+  background-color: $primaryColor;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+#calculadora {
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  height: 590px;
+  border: 2px solid $accentColor;
+  background-color: $primaryColor;
+  box-shadow: 0.1rem 0.1rem 1rem #000;
+  border-radius: 4px;
+}
+
+#display {
+  height: 150px;
+  background-color: $accentColor;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+#btnContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 0.5em;
+  place-items: center;
+  column-gap: 0.1em;
+  row-gap: 0.3em;
+}
+
+@media only screen and (max-width: 750px) {
+  #calculadora {
+    width: 90%;
+  }
+
+  body {
+    padding: 0;
+  }
+}
